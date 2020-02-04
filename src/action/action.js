@@ -9,7 +9,6 @@
 
 export const ChangeAction = () => {
     return async (dispatch) => {
-
         const data = await fetch('https://jsonplaceholder.typicode.com/users')
         const res2 = await data.json()
         dispatch({
@@ -25,6 +24,5 @@ export const AddWishAction = () => {
         payload: 'code'
     }
 }
-
 
 export default ChangeAction;
